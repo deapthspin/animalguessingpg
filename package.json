@@ -1,9 +1,12 @@
 {
+  "homepage": "http://deapthspin.github.io/animalguessingpg",
   "name": "orienationpg",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npx nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +19,7 @@
     "pg": "^8.11.3"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "nodemon": "^3.0.1"
   }
 }
