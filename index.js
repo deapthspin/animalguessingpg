@@ -69,5 +69,5 @@ app.delete('/rooms/:roomid', async(req, res) => {
     }
 })
 
-app.use('/6969')
+// app.use('/6969')
 app.listen(6969)
