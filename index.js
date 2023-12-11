@@ -6,6 +6,8 @@ const pool = require("./db")
 app.use(cors())
 app.use(express.json())
 
+const dotenv = require('dotenv')
+dotenv.config()
 // rooms
 
 app.post('/rooms',async (req, res) => {
